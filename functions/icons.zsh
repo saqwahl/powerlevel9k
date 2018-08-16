@@ -20,11 +20,11 @@ case $POWERLEVEL9K_MODE in
     # Set the right locale to protect special characters
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
     icons=(
-      LEFT_SEGMENT_SEPARATOR         $'\uE0B0'              # 
-      RIGHT_SEGMENT_SEPARATOR        $'\uE0B2'              # 
+      LEFT_SEGMENT_SEPARATOR         '|'              # 
+      RIGHT_SEGMENT_SEPARATOR        '|'              # 
       LEFT_SEGMENT_END_SEPARATOR     ' '                    # Whitespace
-      LEFT_SUBSEGMENT_SEPARATOR      $'\uE0B1'              # 
-      RIGHT_SUBSEGMENT_SEPARATOR     $'\uE0B3'              # 
+      LEFT_SUBSEGMENT_SEPARATOR      '|'              # 
+      RIGHT_SUBSEGMENT_SEPARATOR     '|'              # 
       CARRIAGE_RETURN_ICON           $'\u21B5'              # ↵
       ROOT_ICON                      $'\uE801'              # 
       SUDO_ICON                      $'\uF09C'              # 
@@ -519,8 +519,8 @@ case $POWERLEVEL9K_MODE in
   'compatible')
     # Set the right locale to protect special characters
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
-    icons[LEFT_SEGMENT_SEPARATOR]=$'\u2B80'                 # ⮀
-    icons[RIGHT_SEGMENT_SEPARATOR]=$'\u2B82'                # ⮂
+    icons[LEFT_SEGMENT_SEPARATOR]=''                 # ⮀
+    icons[RIGHT_SEGMENT_SEPARATOR]=''                # ⮂
     icons[VCS_BRANCH_ICON]='@'
   ;;
 esac
